@@ -13,11 +13,12 @@ For example, instead of `chrome://extensions`,
 you need to use `edge://extensions` if you're using Edge.
 The UI is also different from what is described here.*
 
-1. Download the [chromium](chromium) folder.
-2. Head to `chrome://extensions`.
-3. Turn on "Developer mode" in the top-right corner.
-4. Click "Load unpacked" in the top-left corner.
-5. Select the folder.
+1. Download [chromium.zip](https://github.com/tigerros/show-file-on-ireddit/files/12113229/chromium.zip) from the Chromium release.
+2. Extract it (you should end up having a folder called "chromium" that has a "manifest" file in it).
+3. Head to `chrome://extensions`.
+4. Turn on "Developer mode" in the top-right corner.
+5. Click "Load unpacked" in the top-left corner.
+6. Select the extracted folder.
 
 If you're wondering why I didn't publish it on the Chrome Web Store; you need to pay $5 to create a developer account.
 
@@ -27,7 +28,7 @@ If you can't see them, you can install them manually (but it's recommended to wa
 
 For manual installation, follow these steps:
 
-1. Download the [firefox_mv2.zip](firefox_mv2.zip) file.
+1. Download [firefox_mv2.zip](https://github.com/tigerros/show-file-on-ireddit/files/12113258/firefox_mv2.zip) from the Firefox release.
 2. Go to `about:debugging#/runtime/this-firefox`,
 3. Click "Load Temporary Add-on".
 4. Select your `firefox_mv2.zip`.
