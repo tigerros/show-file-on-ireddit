@@ -13,7 +13,7 @@ For example, instead of `chrome://extensions`,
 you need to use `edge://extensions` if you're using Edge.
 The UI is also different from what is described here.*
 
-1. Download [chromium.zip](https://github.com/tigerros/show-file-on-ireddit/files/12113229/chromium.zip) from the Chromium release.
+1. Download [chromium.zip](https://github.com/tigerros/show-file-on-ireddit/raw/master/chromium.zip).
 2. Extract it (you should end up having a folder called "chromium" that has a "manifest" file in it).
 3. Head to `chrome://extensions`.
 4. Turn on "Developer mode" in the top-right corner.
@@ -28,7 +28,7 @@ If you can't see them, you can install them manually (but it's recommended to wa
 
 For manual installation, follow these steps:
 
-1. Download [firefox_mv2.zip](https://github.com/tigerros/show-file-on-ireddit/files/12113258/firefox_mv2.zip) from the Firefox release.
+1. Download [firefox_mv2.zip](https://github.com/tigerros/show-file-on-ireddit/raw/master/firefox_mv2.zip).
 2. Go to `about:debugging#/runtime/this-firefox`,
 3. Click "Load Temporary Add-on".
 4. Select your `firefox_mv2.zip`.
