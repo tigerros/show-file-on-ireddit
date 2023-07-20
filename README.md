@@ -1,5 +1,4 @@
 # Show file on i.redd.it
-
 ## Description
 An extension that hides the default header/footer when visiting an `i.redd.it` or `preview.redd.it` page.
 Doing so improves the loading speed, removes trackers and fixes the broken zooming.
@@ -7,7 +6,6 @@ Doing so improves the loading speed, removes trackers and fixes the broken zoomi
 This extension uses the `browser.webRequest.onBeforeSendHeaders.addListener` function to rewrite the HTTP `Accept` header to accept only images (not the HTML landing page) if the domain is `i.redd.it` or `preview.redd.it`.
 
 ## Installation
-
 ### Chromium
 *This also applies to other Chromium browsers, such as Microsoft Edge, Opera or Brave.
 This tutorial is specifically for Chrome, but it should work for the other ones as well, albeit with some differences.
@@ -21,7 +19,7 @@ The UI is also different from what is described here.*
 4. Click "Load unpacked" in the top-left corner.
 5. Select the folder.
 
-If you're wondering why I didn't publish it on the Chrome Web Store; You need to pay $5 to create a developer account.
+If you're wondering why I didn't publish it on the Chrome Web Store; you need to pay $5 to create a developer account.
 
 ### Firefox
 These add-ons might not be verified yet.
