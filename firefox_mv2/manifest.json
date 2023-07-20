@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "Show file on i.redd.it",
+  "version": "1.0",
+  "description": "Shows only the image file (hides the default header/footer) when visiting an i.redd.it or preview.redd.it page. Doing so improves the loading speed, removes trackers and fixes the broken zooming.",
+  "permissions": ["webRequest", "webRequestBlocking", "*://i.redd.it/*", "*://preview.redd.it/*"],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

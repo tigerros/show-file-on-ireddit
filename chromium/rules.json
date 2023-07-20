@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "priority": 2,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        { "header": "accept", "operation": "set", "value": "image/avif,,image/webp,*/*" }
+      ]
+    },
+    "condition": { "regexFilter": "http[s]?:\\/\\/(i|preview)\\.redd\\.it\\/.+", "resourceTypes": ["main_frame"] }
+  }
+]
