@@ -1,10 +1,9 @@
 let urls = ["*://i.redd.it/*", "*://preview.redd.it/*"]
-let imageRequestAcceptHeaders = "image/avif,image/webp,*/*";
 
 function rewriteAcceptHeader(e) {
     e.requestHeaders.forEach((header) => {
         if (header.name.toLowerCase() === "accept") {
-            header.value = imageRequestAcceptHeaders;
+            header.value = "";
         }
     });
 

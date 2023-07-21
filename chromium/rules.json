@@ -5,7 +5,7 @@
     "action": {
       "type": "modifyHeaders",
       "requestHeaders": [
-        { "header": "accept", "operation": "set", "value": "image/avif,,image/webp,*/*" }
+        { "header": "accept", "operation": "remove" }
       ]
     },
     "condition": { "regexFilter": "http[s]?:\\/\\/(i|preview)\\.redd\\.it\\/.+", "resourceTypes": ["main_frame"] }

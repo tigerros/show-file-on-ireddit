@@ -3,7 +3,9 @@
 An extension that hides the default header/footer when visiting an `i.redd.it` or `preview.redd.it` page.
 Doing so improves the loading speed, removes trackers and fixes the broken zooming.
 
-This extension uses the `browser.webRequest.onBeforeSendHeaders.addListener` function to rewrite the HTTP `Accept` header to accept only images (not the HTML landing page) if the domain is `i.redd.it` or `preview.redd.it`.
+This extension uses the `browser.webRequest.onBeforeSendHeaders.addListener` function to delete the HTTP `Accept` header if the domain is `i.redd.it` or `preview.redd.it`.
+By default, the `Accept` header accepts HTML, and that HTML is the "wrapper" page.
+When it is deleted, only the raw image file is shown.
 
 ## Installation
 ### Chromium
@@ -24,3 +26,8 @@ If you're wondering why I didn't publish it on the Chrome Web Store; you need to
 
 ### Firefox
 [Add-on](https://addons.mozilla.org/en-US/firefox/addon/show-file-on-i-redd-it-mv2/)
+
+PS: If you're wondering why there are two Firefox folders,
+it is because one is for Manifest V2 and the other is for Manifest V3 ([more info](https://developer.chrome.com/docs/extensions/mv3/intro/)).
+The add-on link above leads to the Manifest V2 version, since it's easier to install and works on older Firefox versions.
+Once Firefox stops supporting Manifest V2, I will release the Manifest V3 version.
