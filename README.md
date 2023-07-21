@@ -23,4 +23,4 @@ The UI is also different from what is described here.*
 If you're wondering why I didn't publish it on the Chrome Web Store; you need to pay $5 to create a developer account.
 
 ### Firefox
-* [Add-on](https://addons.mozilla.org/en-US/firefox/addon/show-file-on-i-redd-it-mv2/)
+[Add-on](https://addons.mozilla.org/en-US/firefox/addon/show-file-on-i-redd-it-mv2/)
