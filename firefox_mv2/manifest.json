@@ -11,5 +11,6 @@
     "gecko": {
       "id": "show-file-on-ireddit-mv2@tigerros.github.io"
     }
-  }
+  },
+  "content_security_policy": "script-src 'self'"
 }

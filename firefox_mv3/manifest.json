@@ -13,5 +13,6 @@
       "id": "show-file-on-ireddit-mv3@tigerros.github.io",
       "strict_min_version": "109.0"
     }
-  }
+  },
+  "content_security_policy": {}
 }
