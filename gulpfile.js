@@ -47,7 +47,5 @@ function zipChromium() {
         .pipe(dest('chromium'));
 }
 
-exports.default = series(
-    parallel(minifyFMV2JSON, minifyFMV2JS, minifyFMV3JSON, minifyFMV3JS, minifyChromiumJSON, minifyChromiumJS),
-    zipChromium
-);
+exports.minify = parallel(minifyFMV2JSON, minifyFMV2JS, minifyFMV3JSON, minifyFMV3JS, minifyChromiumJSON, minifyChromiumJS);
+exports.chromiumzip = series(minifyChromiumJSON, minifyChromiumJS, zipChromium);
