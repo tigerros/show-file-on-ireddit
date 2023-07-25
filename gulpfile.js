@@ -32,17 +32,17 @@ function minifyFMV3JS() {
 function minifyChromiumJSON() {
     return src('chromium/chromium/*.json')
         .pipe(jsonminify())
-        .pipe(dest('chromium/chromium.min'));
+        .pipe(dest('chromium/chromium.min/chromium'));
 }
 
 function minifyChromiumJS() {
     return src('chromium/chromium/*.js')
         .pipe(jsminify(jsminifyOptions))
-        .pipe(dest('chromium/chromium.min'));
+        .pipe(dest('chromium/chromium.min/chromium'));
 }
 
 function zipChromium() {
-    return src('chromium/chromium.min')
+    return src('chromium/chromium.min/*')
         .pipe(zip('chromium.zip'))
         .pipe(dest('chromium'));
 }
