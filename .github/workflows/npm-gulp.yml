@@ -28,11 +28,11 @@ jobs:
           gulp
       - name: Configure git name and email
         run: |
-          git config user.name "tigerros"
+          git config user.name "Minifier"
           git config user.email "tigerros.gh@gmail.com"
       - name: Stage changed files
         run: git add .
       - name: Commit changed files
         run: git commit -m "Add chromium.zip"
-      - name: Push code to master
-        run: git push origin HEAD:master
+      - name: Push code
+        run: git push
