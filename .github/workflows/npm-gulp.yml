@@ -27,6 +27,10 @@ jobs:
           npm install
           gulp
 
+      - name: Configure git name
+        run: git config user.name "Minifier"
+      - name: Configure git email
+        run: git config user.email "tigerros.gh@gmail.com"
       - name: Stage changed files
         run: git add .
       - name: Commit changed files
