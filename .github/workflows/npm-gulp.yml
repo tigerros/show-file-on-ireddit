@@ -34,6 +34,6 @@ jobs:
       - name: Stage chromium/chromium.zip
         run: git add chromium/chromium.zip
       - name: Commit changed files
-        run: git commit -m "Add chromium.zip"
+        run: git commit -m "Generate chromium.zip from commit ${{ github.event.head_commit.url }}"
       - name: Push code
         run: git push
