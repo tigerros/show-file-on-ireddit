@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Show file on i.redd.it",
-  "version": "1.0",
-  "description": "Shows only the image file (hides the default header/footer) when visiting an \"i.redd.it\" or \"preview.redd.it\" page. Doing so improves the loading speed, removes trackers and fixes the broken zooming.",
+  "version": "1.1",
+  "description": "Shows only the image file on \"i.redd.it\" or \"preview.redd.it\". This improves loading speed, removes trackers and fixes the broken zooming. Also redirects \"preview.redd.it\" to \"i.redd.it\".",
   "permissions": ["webRequest", "webRequestBlocking", "*://i.redd.it/*", "*://preview.redd.it/*"],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["file_on_ireddit.js"]
   },
   "browser_specific_settings": {
     "gecko": {
