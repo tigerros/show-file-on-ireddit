@@ -3,3 +3,4 @@ package-lock.json
 node_modules
 firefox_mv2.min
 firefox_mv3.min
+chromium.min
