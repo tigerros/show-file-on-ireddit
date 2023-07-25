@@ -32,7 +32,7 @@ jobs:
           git config user.name "Minifier"
           git config user.email "tigerros.gh@gmail.com"
       - name: Stage changed files
-        run: git add .
+        run: git add chromium.zip
       - name: Commit changed files
         run: git commit -m "Add chromium.zip"
       - name: Push code
