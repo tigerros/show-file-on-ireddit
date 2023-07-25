@@ -28,7 +28,7 @@ jobs:
           gulp
       - name: Configure git name and email
         run: |
-          git config user.name "Minifier"
+          git config user.name "tigerros"
           git config user.email "tigerros.gh@gmail.com"
       - name: Stage changed files
         run: git add .
