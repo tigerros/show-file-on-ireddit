@@ -42,7 +42,7 @@ function minifyChromiumJS() {
 }
 
 function zipChromium() {
-    return src('chromium/chromium.min/*')
+    return src('chromium/chromium.min/**/*')
         .pipe(zip('chromium.zip'))
         .pipe(dest('chromium'));
 }

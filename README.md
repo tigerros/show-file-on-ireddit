@@ -13,7 +13,7 @@ For example, instead of `chrome://extensions`, you use `edge://extensions` on Ed
 The UI is also different from what is described here.*
 
 1. Download [chromium.zip](https://github.com/tigerros/show-file-on-ireddit/raw/master/chromium/chromium.zip).
-2. Extract it (you should end up having a folder called "chromium.min" that has a "manifest.json" file in it).
+2. Extract it (you should end up having a folder called "chromium" that has a "manifest.json" file in it).
 3. Go to `chrome://extensions`.
 4. Turn on "Developer mode" in the top-right corner.
 5. Click "Load unpacked" in the top-left corner.
