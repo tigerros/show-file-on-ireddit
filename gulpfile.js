@@ -17,6 +17,12 @@ function minifyFMV2JS() {
         .pipe(dest('firefox/firefox_mv2.min'));
 }
 
+function zipFMV2() {
+    return src('firefox/firefox_mv2.min/**/*')
+        .pipe(zip('firefox_mv2.zip'))
+        .pipe(dest('firefox'));
+}
+
 function minifyFMV3JSON() {
     return src('firefox/firefox_mv3/*.json')
         .pipe(jsonminify())
@@ -27,6 +33,12 @@ function minifyFMV3JS() {
     return src('firefox/firefox_mv3/*.js')
         .pipe(jsminify(jsminifyOptions))
         .pipe(dest('firefox/firefox_mv3.min'));
+}
+
+function zipFMV3() {
+    return src('firefox/firefox_mv3.min/**/*')
+        .pipe(zip('firefox_mv3.zip'))
+        .pipe(dest('firefox'));
 }
 
 function minifyChromiumJSON() {
@@ -49,3 +61,4 @@ function zipChromium() {
 
 exports.minify = parallel(minifyFMV2JSON, minifyFMV2JS, minifyFMV3JSON, minifyFMV3JS, minifyChromiumJSON, minifyChromiumJS);
 exports.chromiumzip = series(minifyChromiumJSON, minifyChromiumJS, zipChromium);
+exports.firefoxzip = series(parallel(minifyFMV2JSON, minifyFMV2JS, minifyFMV3JSON, minifyFMV3JS), parallel(zipFMV2, zipFMV3))
