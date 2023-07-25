@@ -27,6 +27,8 @@ jobs:
           npm install
           gulp
 
+      - name: Configure git name
+        run: git config --global user.name "Minifier"
       - name: Stage changed files
         run: git add .
       - name: Commit changed files
