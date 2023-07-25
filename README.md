@@ -18,6 +18,7 @@ The UI is also different from what is described here.*
 4. Turn on "Developer mode" in the top-right corner.
 5. Click "Load unpacked" in the top-left corner.
 6. Select the extracted folder.
+7. Don't delete the folder.
 
 If you're wondering why I didn't publish it on the Chrome Web Store; you need to pay $5 to create a developer account.
 
