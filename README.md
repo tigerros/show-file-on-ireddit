@@ -1,3 +1,11 @@
+# ⛔ This extension is deprecated ⛔
+
+Download [reddit-media-page-cleanup](https://github.com/tigerros/reddit-media-page-cleanup) instead.
+It's the same thing, but with bug fixes and additional features.
+I made a new one because the "Show file on i.redd.it" name is too specific.
+
+<s>
+
 # Show file on i.redd.it
 ## Description
 This extension:
@@ -32,3 +40,5 @@ Once Firefox stops supporting Manifest V2, I will release the Manifest V3 versio
 
 ## Gulp
 I'm using Gulp to minify the add-ons and also zip the Chromium minified folder.
+
+</s>
