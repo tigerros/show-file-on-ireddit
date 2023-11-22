@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Show file on i.redd.it",
+  "version": "1.2",
+  "description": "DEPRECATED. Use \"Reddit media page cleanup\" instead.",
+  "background": {
+    "scripts": ["deprecation-alert-on-installation.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://i.redd.it/*", "https://preview.redd.it/*", "https://*.reddit.com/media?url=*"],
+      "js": ["deprecation-alert-on-page.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "show-file-on-ireddit-mv2@tigerros.github.io"
+    }
+  },
+  "content_security_policy": "script-src 'self'"
+}
